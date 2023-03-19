@@ -1,0 +1,24 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.status {
+  size: 10rem;
+  background-color: red;
+}
+
+.board-row {
+  background-color: green;
+}
+
+.game {
+  background-color: yellow;
+}
+.game-board {
+  background-color: blue;
+}
+
+.game-info {
+  background-color: royalblue;
+}
