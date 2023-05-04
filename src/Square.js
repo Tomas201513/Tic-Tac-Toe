@@ -1,9 +1,29 @@
-import { Box, Button, Stack, styled, Divider, Paper } from "@mui/material";
+import React from "react";
 
-export function Square({ value, onSquareClick }) {
+function Square({ clickedArray, handleClick }) {
   return (
-    <Button sx={{ background: "#AADDE8" }} size="larg" onClick={onSquareClick}>
-      {value}
-    </Button>
+    <div className="board">
+      {clickedArray.map((item, index) => {
+        if (item === "") {
+          return (
+            <div
+              key={index}
+              className="square"
+              onClick={() => handleClick(index)}
+            >
+              {item}
+            </div>
+          );
+        } else {
+          return (
+            <div key={index} className="square clicked">
+              {item}
+            </div>
+          );
+        }
+      })}
+    </div>
   );
 }
+
+export default Square;

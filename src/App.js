@@ -1,9 +1,13 @@
-import "./styles.css";
-import Game from "./Game";
-export default function App() {
+import React from "react";
+import "./App.css";
+import TicTacToe from "./TicTacToe";
+
+function App() {
   return (
-    <>
-      <Game />
-    </>
+    <div className="App">
+      <TicTacToe />
+    </div>
   );
 }
+
+export default App;
